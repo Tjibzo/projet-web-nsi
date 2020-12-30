@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 body {
+  margin-left: 100px;
+  margin-right: 100px;
   font-family: 'Cabin', sans-serif;
   font-family: 'Crete Round', serif;
 }
 
 h2 {
   text-decoration: underline;
-  letter-spacing: 4px;
+  letter-spacing: 10px;
 }
 
 .accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "container"*/
