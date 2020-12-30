@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
+<!DOCTYPE html> <!--Permet de dire qu'on utilise la dernière version d'HTML..-->
+<html lang="fr"> <!--Permet de définir la langue du site.-->
 
-    <meta charset="utf-8"/>
+  <head>
+    <!--Permet de définir l'encodage utilisé.-->
+    <meta charset="UTF-8" />
+    <!--Permet de définir le nom de l'onglet.-->
     <title>John Von Neumann</title>
+    <!--Permet d'indiquer le fichier CSS.-->
     <link rel="stylesheet" href="style_jvn.css" type="text/css"/>
   </head>
 
   <body>
+    <!--Permet d'ouvrir une division portant la classe "accueil".-->
     <div class="accueil">
+      <!--Permet d'ouvrir une division portant la classe "menu".-->
       <div class="menu">
+        <!--Permet d'aller à la ligne.-->
         <br/>
+        <!--Permet de définir les liens des boutons et leurs classes.-->
         <a href="#biographie" class="button">Biographie</a>
         <a href="#grandes_dates" class="button">Grandes dates</a>
         <a href="#decouvertes" class="button">Decouvertes</a>
@@ -20,10 +27,14 @@
       <h1>John Von Neumann<br/>(1903 - 1957)</h1>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
+    <!--Permet d'ouvrir une division portant la classe "page".-->
     <div class="page">
+      <!--Création d'une ancre d'identifiant "biographie"-->
       <p id="biographie"></p>
       <br/><br/><br/>
+      <!--Permet d'afficher un sous-titre.-->
       <h2>BIOGRAPHIE</h2>
+      <!--Permet d'afficher un paragraphe.-->
       <p>John Von Neumann, né le 28 décembre 1903 à Budapest, est un mathématicien et physicien d’origine hongroise.  gé d'à peine 22 ans, il reçoit son doctorat en mathématiques de l'université de Budapest.<br/>
 
         Ce génie précoce qui a fait partie des nombreux savants Européen à avoir émigré aux Etats Unis pendant l’occupation nazie en Europe ou il travail sur le projet manhattan. Les atroces conséquences de ses recherches, donc le fait qu’elles entraineront la mort de milliers de civils ne semblent pas lui  poser de problème éthique.<br/>
@@ -31,17 +42,23 @@
         Il a également apporté d’importantes contributions en mécanique quantique, en analyse fonctionnelle, en théorie des ensembles, en informatique, en sciences économiques et dans beaucoup d'autres domaines des mathématiques et de la physique.<br/></p>
       <p>Il s’est intéressé à de nombreuses disciplines, mais c'est en informatique où il se démarque  le plus,  et c'est grâce à ses recherches qu'on a donné son nom à l’organisation de base des ordinateurs. Cette organisation distingue quatre composantes :
       </p>
+      <!--Permet de faire une liste non numérotée.-->
       <ul>
         <li>une unité arithmétique et logique qui effectue les opérations de base.</li>
         <li>une unité de contrôle chargée du séquencement des opérations.</li>
         <li>la mémoire qui contient les données et le programme qui commande au traitement de ces données.</li>
         <li>les dispositifs d’entrées et sorties qui permettent à l’ordinateur de communiquer avec le monde extérieur.</li>
       </ul>
+      <!--Permet d'afficher un paragraphe.-->
       <p>Cependant  la paternité de ses travaux est  contestée.</p>
+      <!--Permet d'afficher une image.-->
       <img src="https://academy.hackthebox.eu/storage/modules/31/von_neumann3.png" alt="von-neumann"/>
+      <!--Création d'une ancre d'identifiant "grandes_dates"-->
       <p id="grandes_dates"></p>
       <br/><br/><br/>
+      <!--Permet d'afficher un sous-titre.-->
       <h2>LES  GRANDES  DATES</h2>
+      <!--Permet de faire une liste non numérotée portant la classe "gd".-->
       <ul class="gd">
         <li><b>28 décembre 1903 :</b> naissance</li>
         <li><b>1925:</b> Il reçoit son doctorat en mathématiques</li>
@@ -50,6 +67,7 @@
         <li><b>1929 :</b> Il se marie une première fois avec Mariette Kövesi avec laquelle il a une fille</li>
         <li><b>De 1933 à sa mort en 1957:</b> Il est professeur de mathématiques à la faculté de l'Institute for Advanced Study</li>
         <li><b>1935 :</b> Naissance de sa fille Mariana</li>
+        <!--Permet de créer un conteneur dans la ligne afin de fournir des propriétés CSS uniquement à ce qui se trouve entre les basiles "span".-->
         <li><b>1936 :</b> Il publie <span class="livre">La logique de la mécanique quantique</span></li>
         <li><b>1937 :</b> Il se divorce de  Mariette Kövesi mais conservent toujours une relation cordiale</li>
         <li><b>1937 :</b> Il est naturalisé américain, l'année même où il commence sa collaboration avec le Laboratoire de recherche balistique</li>
@@ -59,31 +77,43 @@
         <li><b>1956 :</b> Peu avant son décès, il reçoit le prix Enrico Fermi</li>
         <li><b>8 février 1957 :</b> Décès</li>
       </ul>
+      <!--Création d'une ancre d'identifiant "decouvertes"-->
       <p id="decouvertes"></p>
       <br/><br/><br/>
+      <!--Permet d'afficher un sous-titre.-->
       <h2>SES PLUSGRANDES DECOUVERTES</h2>
+      <!--Permet d'afficher un paragraphe.-->
       <p>Il a apporté d’importantes contributions en mécanique quantique, en analyse fonctionnelle, en théorie des ensembles, en informatique, en sciences économiques et dans beaucoup d'autres domaines des mathématiques et de la physique.<br/><br/>Voici quelques unes de ses découvertes qui ont marqué le monde :</p>
+      <!--Permet de faire une liste numérotée.-->
       <ol>
         <li><b>1927 :</b> Découverte de la Density Matrix</li>
+        <!--Permet de créer un conteneur dans la ligne afin de fournir des propriétés CSS uniquement à ce qui se trouve entre les balises "span".-->
         <li><b>1928 :</b> Axiomatisation de la théorie des ensembles dans <span class="livre">Die Axiomatisierung der Mengenlehre</span></li>
+        <!--Permet de créer un conteneur dans la ligne afin de fournir des propriétés CSS uniquement à ce qui se trouve entre les balises "span".-->
         <li><b>1932 :</b> <span class="livre">Mathematical Foundations of Quantum Mechanics</span></li>
         <li><b>~1940 :</b> Hypothèse d’une structure mécanique pouvant acquérir toutes les propriétés caractéristiques du vivant</li>
         <li><b>1942-1945 :</b> Démonstration que les effets d’une bombe de grande taille dépendent pour de l’altitude à laquelle elle explose</li>
         <li><b>1942-1945 :</b> Mise au point de la lentille explosive de la bombe Fat Man</li>
+        <!--Permet de créer un conteneur dans la ligne afin de fournir des propriétés CSS uniquement à ce qui se trouve entre les balises "span".-->
         <li><b>1944 :</b> <span class="livre">Theory of Games and Economic Behavior</span> (Théorie des jeux et du comportement économique) avec Oskar Morgenstern</li>
         <li><b>1945 :</b> création de l'architecture Von-Neumann</li>
         <li>Développement de la bombe H</li>
 
       </ol>
       <br/><br/><br/>
+      <!--Permet d'afficher un sous-titre.-->
       <h2>EN RESUME</h2>
+      <!--Permet de créer un tableau.-->
       <table>
         <tr>
           <td id="resumer">John Von Neumann, né le 28 décembre 1903 à Budapest, est un mathématicien et physicien d’origine hongroise. Ce génie précoce qui a fait partie des nombreux savants Européen à avoir émigré aux Etats Unis pendant l’occupation nazie en Europe est l’un des pionniers de l’informatique moderne. Il est considéré aujourd’hui comme l’un des pères de l’ordinateur, notamment pour avoir mis en place une architechture présente aujourd’hui dans presque tous les ordinateurs, téléphones....</td>
         </tr>
       </table>
       <br/><br/><br/>
+      <!--Permet d'afficher un sous-titre.-->
       <h2>SOURCES</h2>
+      <!--Permet d'inclure des liens sous la forme du titre des pages visées.-->
+      <!--Permet de créer un conteneur dans la ligne afin de fournir des propriétés CSS uniquement à ce qui se trouve entre les balises "span".-->
       <a href="http://homonumericus.inria.fr/les-grandes-personnalites-de-linformatique/index.html"><span class="site">Elles et ils ont marqué l'Histoire de l'informatique</span> - inria.fr</a><br/>
       <a href="https://www.universalis.fr/encyclopedie/john-von-neumann/4-theorie-des-jeux-et-mathematiques-economiques/"><span class="site">JOHN VON NEUMANN, Théorie des jeux et mathématiques économiques</span> - universalis.fr</a><br/>
       <a href="https://ui.adsabs.harvard.edu/abs/1927ZPhy...45..430L/abstract"><span class="site">Das Dämpfungsproblem in der Wellenmechanik</span> - harvard.edu</a><br/>
@@ -92,10 +122,12 @@
       <a href="http://www.slate.fr/story/137594/john-von-neumann-mathematicien-einstein-sombre-bombe-atomique"><span class="site">L'histoire du génial mathématicien méconnu qui influa sur le XXe siècle</span> - slate.fr</a><br/>
       <a href="https://fr.wikipedia.org/wiki/John_von_Neumann"><span class="site">John von Neumann</span> - wikipedia.org</a><br/>
       <br/><br/>
+      <!--Permet d'afficher un paragraphe.-->
       <p>Auteurs :</p>
+      <!--Permet de faire une liste non numérotée portant la classe "ecriture".-->
       <ul class="ecriture">
         <li><a class="auteurs" href="carlos.html">Carlos ARIAS</a></li>
-        <li><a class="auteurs" href="..\page_indiv\page_individuelle_margot_V.html">Margot VERDOUX</a></li>
+        <li><a class="auteurs" href="..\page_indiv\Margot_V\page_individuelle_margot_V.html">Margot VERDOUX</a></li>
       </ul>
     </div>
   </body>
