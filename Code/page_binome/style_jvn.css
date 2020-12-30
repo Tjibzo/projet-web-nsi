@@ -43,3 +43,7 @@ h1 {
 .page {
   height: 3000px;
 }
+
+td {
+  border: 5px solid;
+}
