@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Crete+Round&display=swap');
 body {
   margin-left: 100px;
   margin-right: 100px;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Crete Round', serif;
 }
 
 .container { /*Valable uniquement pour les éléments présents dans la division portant la classe "container"*/
@@ -39,6 +42,10 @@ a.button:hover {
 h1 {
   margin-top: 100px;
 }
+h2 {
+  text-decoration: underline;
+  letter-spacing: 4px;
+}
 
 .page {
   height: 3000px;
@@ -46,4 +53,29 @@ h1 {
 
 td {
   border: 5px solid;
+}
+
+ul.a {
+  list-style-type: square;
+}
+.livre {
+  text-decoration: underline;
+  font-style: italic;
+  color: #339900;
+}
+.gd {
+  list-style-type: none;
+}
+
+.site {
+  color: #0099ff;
+}
+
+.auteurs{
+  color: #ff0101;
+  
+}
+
+a {
+  text-decoration: none;
 }
