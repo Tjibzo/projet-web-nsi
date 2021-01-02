@@ -114,6 +114,7 @@ a.button:hover { /*Valable uniquement pour les textes contenus dans les balises 
     /*Permet de faire une transition.*/
     transition: all 0.05s ease-out 0s;
 }
+
 .accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "accueil".*/
     /*Permet de placer, positionner et redimentionner l'image de fond, qui apparaît uniquement dans cette division.*/
     height: 100%;
