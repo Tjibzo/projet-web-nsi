@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: sans-serif;
+}
+
 img {
   width: 200px;
   height:150px;
@@ -78,6 +85,7 @@ h1 {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
+  padding-bottom: 50px;
   border: 1px solid #888;
   width: 80%;
 }
@@ -88,6 +96,7 @@ h1 {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding-left: 25px;
 }
 
 .close:hover {
