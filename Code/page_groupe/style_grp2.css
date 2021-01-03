@@ -1,0 +1,35 @@
+img {
+  width: 200px;
+}
+
+p {
+  font-family: FreeMono, monospace;
+}
+
+h2 {
+  color: #9b0a1d;
+  font-family: Chalkduster, fantasy;
+  text-align: justify;
+  text-decoration: underline;
+  text-align: center;
+}
+
+td {
+  font-family: Courier New, monospace;
+}
+
+a {
+  color: red;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: circle
+}
+
+img {
+  width: 200px;
+  height:150px;
+  border-radius:10px;
+}
