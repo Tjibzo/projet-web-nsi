@@ -6,6 +6,32 @@ img {
   border-radius:10px;
 }
 
+p {
+  font-family: FreeMono, monospace;
+}
+
+h2 {
+  color: #9b0a1d;
+  font-family: Chalkduster, fantasy;
+  text-align: justify;
+  text-decoration: underline;
+  text-align: center;
+}
+
+td {
+  font-family: Courier New, monospace;
+}
+
+a {
+  color: red;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: circle
+}
+
 .accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "accueil".*/
   margin-top: -10px;
   /*Permet de placer, positionner et redimentionner l'image de fond, qui apparaît uniquement dans cette division.*/
@@ -20,20 +46,6 @@ img {
   /*Permet à ce que l'arrière plan reste à la même place quand on scroll dans l'image.*/
   background-attachment: fixed;
   padding: 280px;
-<<<<<<< Updated upstream
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Caveat', cursive;
-  font-size: 70px;
-  background-color: rgba(173, 173, 173, 0.2);
-  box-shadow: 5px 10px 18px 25px rgba(173, 173, 173, 0.2), -5px -10px 18px 25px rgba(173, 173, 173, 0.2);
-
-  p {
-  font-family: FreeMono, monospace;
-=======
->>>>>>> Stashed changes
 }
 
 h1 {
