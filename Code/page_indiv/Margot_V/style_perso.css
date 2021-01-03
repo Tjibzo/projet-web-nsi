@@ -1,138 +1,173 @@
-body { /*Valable pour tout le document*/
-    /*Permet de délimiter là ou les éléments vont apparaître*/
+/*Import de la police Lobster depuis l'api de google font.*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body { /*Valable pour tout le document.*/
+    /*Permet de délimiter là ou les éléments vont apparaître.*/
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 0px;
-    /*Réglage de la couleur de l'arrière-plan*/
+    /*Réglage de la couleur de l'arrière-plan.*/
     background-color: #f8f8f8;
 }
 
-.accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "accueil"*/
-    /*Permet de placer, positionner et redimentionner l'image de fond, qui apparaît uniquement dans cette division*/
-    height: 100%;
-    background-image: url("Assets/laptop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*Permet à l'arrière plan de ne pas être affecté par la zone définie plus haut*/
-    margin-left: -100px;
-    margin-right: -100px;
-    /*Permet à ce que l'arrière plan reste à la même place quand on scroll dans l'image*/
-    background-attachment: fixed;
-    /*Permet de centrer les éléments contenus dans cette division*/
-    justify-content: center;
-}
-
-.page { /*Valable uniquement pour les éléments présents dans la division portant la classe "page"*/
-    /*Permet de donner une longueur à cette page, et ainsi, pouvoir scroller dans la page.*/
-    height: 3000px;
-}
-
-.accueil.button { /*Valable uniquement pour les éléments portant la classe "button" présents dans la division portant la classe "accueil"*/
-    /*Permet de masquer les éléments qui dépassent de la classe*/
-    overflow: hidden;
-}
-
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: bolder;
+h1 { /*Valable uniquement pour les textes contenus dans les balises "h1".*/
+    /*Permet de définir la police du texte, le mettre en gras, et de le placer au centre.*/
+    font-family: 'Lobster', cursive;
+    font-style: bold;
     text-align: center;
+    /*Permet de mettre un espace à droite, à gauche et en dessous du texte, en dehors de ses bordures.*/
     margin-bottom: 100px;
     margin-left: 500px;
     margin-right: 500px;
+    /*Permet de définir la couleur du texte.*/
     color: #f8f8f8;
+    /*Permet de "remplir" le texte et d'élargir ses bordures.*/
     padding: 10px 35px;
+    /*Permet de placer l'élément au premier plan.*/
     z-index: 1;
 }
 
-h2 {
+h2 { /*Valable uniquement pour les textes contenus dans les balises "h2".*/
+    /*Permet de définir la police du texte, de le souligner et de le placer au centre.*/
     font-family: sans-serif;
     text-decoration: underline;
     text-align: center;
+    /*Permet de mettre un espace en dessous du texte, en dehors de ses bordures.*/
     margin-bottom: 50px;
 }
 
-h3 {
+h3 { /*Valable uniquement pour les textes contenus dans les balises "h3".*/
+    /*Permet de définir la police du texte, de le souligner et de le placer au centre.*/
     font-family: sans-serif;
     text-decoration: underline;
+    /*Permet de mettre un espace à droite, à gauche et au dessus du texte, en dehors de ses bordures.*/
     margin-top: 30px;
     margin-bottom: 10px;
     margin-left: 150px;
 }
 
-p {
+p { /*Valable uniquement pour les textes contenus dans les balises "p".*/
+    /*Permet de définir la police du texte, de le justifier, et de paramétrer sa taille.*/
     font-family: sans-serif;
     text-align: justify;
     font-size: 15px;
+    /*Permet de définir l'espace interligne*/
     line-height: 25px;
 }
 
-ul {
+ul { /*Valable uniquement pour les textes contenus dans les balises "ul".*/
+    /*Permet de définir la police du texte, de le justifier, et de paramétrer sa taille.*/
     font-family: sans-serif;
     text-align: justify;
+    font-size: 15px;
+    /*Permet de masquer les boulets de la liste.*/
     list-style: none;
-    font-size: 15px;
+    /*Permet de définir l'espace interligne.*/
     line-height: 25px;
 }
 
-ol {
+ol { /*Valable uniquement pour les textes contenus dans les balises "ol".*/
+    /*Permet de définir la police du texte, de le justifier, et de paramétrer sa taille.*/
     font-family: sans-serif;
     text-align: justify;
     font-size: 15px;
+    /*Permet de définir l'espace interligne.*/
     line-height: 25px;
 }
 
-li {
+li { /*Valable uniquement pour les textes contenus dans les balises "li".*/
     margin-bottom: 5px;
 }
 
-a {
+a { /*Valable uniquement pour les textes contenus dans les balises "a".*/
+    /*Permet de retirer le soulignement en dessous des liens.*/
     text-decoration: none;
+    /*Permet de mettre le lien en rouge.*/
     color: red;
 }
 
-a:hover {
+a:hover { /*Valable uniquement pour les textes contenus dans les balises "a", quand ils sont survolés par la souris.*/
+    /*Permet de souligner les liens.*/
     text-decoration: underline;
 }
 
-a.button {
+a.button { /*Valable uniquement pour les textes contenus dans les balises "a" portant la classe "button".*/
+    /*Permet de "remplir" le texte et d'élargir ses bordures.*/
     padding: 10px 35px;
+    /*Permet de mettre un espace autour du texte, en dehors de ses bordures, afin de le centrer.*/
     margin: 0 1rem;
     margin-left: 16.25%;
-    color: red;
+    /*Permet de définir la police du texte et d'enlever son soulignement.*/
     font-family: sans-serif;
     text-decoration: none;
+    /*Permet de mettre le texte en rouge.*/
+    color: red;
+    /*Permet de mettre l'arrière plan du texte en noir avec une opacité faible.*/
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-a.button:hover {
+a.button:hover { /*Valable uniquement pour les textes contenus dans les balises "a" portant la classe "button" quand il sosnt survolés par la souris.*/
+    /*Permet de mettre l'arrière plan du texte en rouge.*/
     background: red;
+    /*Permet de mettre le texte en blanc.*/
     color: white;
+    /*Permet de faire une transition.*/
     transition: all 0.05s ease-out 0s;
 }
 
-.menu {
+.accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "accueil".*/
+    /*Permet de placer, positionner et redimentionner l'image de fond, qui apparaît uniquement dans cette division.*/
+    height: 100%;
+    background-image: url("Assets/laptop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Permet à l'arrière plan de ne pas être affecté par la zone définie plus haut.*/
+    margin-left: -100px;
+    margin-right: -100px;
+    /*Permet à ce que l'arrière plan reste à la même place quand on scroll dans l'image.*/
+    background-attachment: fixed;
+    /*Permet de centrer les éléments contenus dans cette division.*/
+    justify-content: center;
+}
+
+.menu { /*Valable uniquement pour les éléments présents dans la division portant la classe "menu".*/
+    /*Permet ce que le menu prenne toute la largeur de la page.*/
     width: 100%;
+    /*Permet de mettre la couleur de la barre de menu en gris, avec un peu de transparence.*/
     background-color: rgba(173, 173, 173, 0.9);
+    /*Permet ce que la barre de menu reste en haut de l'écran quand on scroll.*/
     position: fixed;
+    /*Permet de placer l'élément au premier plan.*/
     z-index: 1;
 }
 
-.sections {
+.accueil.button { /*Valable uniquement pour les éléments portant la classe "button" présents dans la division portant la classe "accueil".*/
+    /*Permet de masquer les éléments qui dépassent de la classe.*/
+    overflow: hidden;
+}
+
+.sections { /*Valable uniquement pour les éléments présents dans les divisions portant la classe "sections".*/
+    /*Permet de positionner les sections dans la page.*/
     position: relative;
     top: 50px;
+    /*Permet de placer les éléments au second plan.*/
     z-index: 0;
 }
 
-.backg {
+.backg { /*Valable uniquement pour les éléments portant la classe "backg".*/
+    /*Permet de positionner l'image.*/
     position: absolute;
     top: 3%;
     left: 25%;
+    /*Permet de positionner l'élément au second plan.*/
     z-index: 0;
 }
 
-.descri {
+.descri { /*Valable uniquement pour les éléments portant la classe "descri".*/
+    /*Permet de positionner le texte par dessus l'image.*/
     position: absolute;
     left: 5%;
+    /*Permet de positionner l'élément au second plan.*/
     z-index: 0;
 }

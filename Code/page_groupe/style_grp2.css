@@ -28,4 +28,29 @@ h1 {
   font-size: 70px;
   background-color: rgba(173, 173, 173, 0.2);
   box-shadow: 5px 10px 18px 25px rgba(173, 173, 173, 0.2), -5px -10px 18px 25px rgba(173, 173, 173, 0.2);
+
+  p {
+  font-family: FreeMono, monospace;
+}
+
+h2 {
+  color: #9b0a1d;
+  font-family: Chalkduster, fantasy;
+  text-align: justify;
+  text-decoration: underline;
+  text-align: center;
+}
+
+td {
+  font-family: Courier New, monospace;
+}
+
+a {
+  color: red;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: circle
 }
