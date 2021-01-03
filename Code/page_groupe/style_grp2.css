@@ -1,5 +1,7 @@
 img {
   width: 200px;
+  height:150px;
+  border-radius:10px;
 }
 
 p {
@@ -26,10 +28,4 @@ a {
 
 ul {
   list-style-type: circle
-}
-
-img {
-  width: 200px;
-  height:150px;
-  border-radius:10px;
 }
