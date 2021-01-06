@@ -1,50 +1,80 @@
+/*Import de les polices "Caveat" et "Ubuntu" depuis l'api de google font.*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
-body {
+body {/*Valable pour tout le document.*/
+  /*Permet de délimiter là ou les éléments vont apparaître.*/
   margin-left: 100px;
   margin-right: 100px;
-  font-family: sans-serif;
+  /*Permet de définir la police du texte.*/
+  font-family: 'Ubuntu', sans-serif;
 }
 
-img {
-  width: 200px;
-  height:150px;
-  border-radius:10px;
+h1 {/*Valable uniquement pour les textes contenus dans les balises "h1".*/
+  /*Permet de définir la police du texte, de le centrer et de définir sa taille.*/
+  font-family: 'Caveat', cursive;
+  text-align: center;
+  font-size: 70px;
+  /*Permet de mettre l'intérieur du tableau en gris clair, avec une opacité faible.*/
+  background-color: rgba(173, 173, 173, 0.2);
+  /*Permet d'afficher un dégradé à partir du conteneur du texte..*/
+  box-shadow: 5px 10px 18px 25px rgba(173, 173, 173, 0.1), -5px -10px 18px 25px rgba(173, 173, 173, 0.1);
 }
 
-p {
-  font-family: FreeMono, monospace;
-}
-
-h2 {
+h2 { /*Valable uniquement pour les textes contenus dans les balises "h2".*/
+  /*Permet de définir la couleur du texte.*/
   color: #9b0a1d;
+  /*Permet de définir la police du texte, de le centrer et de le souligner.*/
   font-family: Chalkduster, fantasy;
-  text-align: justify;
-  text-decoration: underline;
   text-align: center;
-}
-
-td {
-  font-family: Courier New, monospace;
-  text-align: center;
-}
-
-a {
-  color: red;
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
-a:hover {
   text-decoration: underline;
 }
 
-ul {
+div { /*Valable uniquement pour les contenus des balises "div".*/
+  /*Permet de "remplir" la division et d'élargir ses bordures.*/
+  padding: 10px;
+}
+
+div[class^=image]:hover { /*Valable uniquement pour les contenus des balises "div" portant une classe commençant par le mot "image", quans ils sont survolés par la souris.*/
+  /*Permet de changer l'apparence du curseur*/
+  cursor: progress;
+}
+
+img { /*Valable uniquement pour les contenus dans les balises "img".*/
+  /*Permet de définir la largeur et la hauteur de l'image.*/
+  width: 200px;
+  height: 150px;
+  /*Permet d'arrondir les angles de l'image.*/
+  border-radius: 5px;
+}
+
+table, tr, td { /*Valable uniquement pour les contenus dans les balises "table", "tr" et "td".*/
+  /*Permet de donner une bordure continue orangée épaisse de 5 pixels.*/
+  border: 5px solid #FAA24C;
+  /*Permet de centrer le tetxe.*/
+  text-align: center;
+}
+
+ul { /*Valable uniquement pour les contenus dans les balises "ul".*/
+  /*Permet de changer la puce pour un cercle.*/
   list-style-type: circle
 }
 
+a { /*Valable uniquement pour les textes contenus dans les balises "a".*/
+  /*Permet de mettre le texte en rouge.*/
+  color: red;
+  /*Permet d'enlever le soulignement du texte.*/
+  text-decoration: none;
+}
+
+a:hover { /*Valable uniquement pour les textes contenus dans les balises "a", quand ils sont survolés par la souris.*/
+  /*Permet de souligner le texte.*/
+  text-decoration: underline;
+}
+
 .accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "accueil".*/
+  /*Permet de remonter le contenu de 10 pixels.*/
   margin-top: -10px;
   /*Permet de placer, positionner et redimentionner l'image de fond, qui apparaît uniquement dans cette division.*/
   height: 100%;
@@ -60,71 +90,78 @@ ul {
   padding: 280px;
 }
 
-h1 {
-  text-align: center;
-  font-family: 'Caveat', cursive;
-  font-size: 70px;
-  background-color: rgba(173, 173, 173, 0.2);
-  box-shadow: 5px 10px 18px 25px rgba(173, 173, 173, 0.2), -5px -10px 18px 25px rgba(173, 173, 173, 0.2);
-}
-
-
-
-/* The Modal (background) */
-.fenetre {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+.fenetre { /*Valable uniquement pour les éléments présents dans la division portant la classe "fenetre".*/
+  /*Permet de cacher l'élément, par défaut.*/
+  display: none;
+  /*Permet de faire que l'élément ne se déplace pas quand on scroll.*/
+  position: fixed;
+  /*Permet de mettre l'élément au premier plan.*/
+  z-index: 1;
+  /*Permet de "remplir" l'élément et d'élargir sa bordure du dessus.*/
+  padding-top: 100px;
+  /*Permet de gérer la position du pop-up.*/
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /*Permet de mettre la largeur et la hauteur au maximum.*/
+  width: 100%;
+  height: 100%;
+  /*Permet d'autoriser le scroll si jamais le contenu dépasse de la fenêtre.*/
+  overflow: auto;
+  /*Permet de mettre l'intérieur de la fenêtre en blanc.*/
+  background-color: rgb(0,0,0);
+  /*Permet de mettre l'arrière-plan de la fenêtre en noir, avec une opacité faible.*/
+  background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content */
-.contenu_fenetre {
+.contenu_fenetre { /*Valable uniquement pour les éléments présents dans la division portant la classe "contenu_fenetre".*/
+  /*Permet de mettre le fond du contenu de la fenêtre en un blanc-gris clair.*/
   background-color: #fefefe;
+  /*Permet de centrer le contenu du texte, dans la fenêtre.*/
   margin: auto;
+  /*Permet de "remplir" l'élément et d'élargir ses bordures.*/
   padding: 20px;
+  /*Permet de "remplir" encore plus l'élément et d'élargir encore plus sa bordure du bas.*/
   padding-bottom: 50px;
-  border: 1px solid #888;
+  /*Permet de mettre une bordure gris-foncé, continue, épaisse de 1 pixel.*/
+  border: 1px solid #888888;
+  /*Permet de mettre la largeur à 80%.*/
   width: 80%;
 }
 
-/* The Close Button */
-.close {
+.close { /*Valable uniquement pour les textes portant la classe "close".*/
+  /*Permet de mettre le texte en gris-clair.*/
   color: #aaaaaa;
+  /*Permet d'alligner le texte à droite.*/
   float: right;
+  /*Permet de définir la taille du texte.*/
   font-size: 28px;
-  font-weight: bold;
+  /*Permet de "remplir" l'élément et d'élargir sa bordure gauche.*/
   padding-left: 25px;
 }
 
-.close:hover {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover { /*Valable uniquement pour les textes portant la classe "close", quand ils sont survolés par la souris.*/
+  /*Permet de mettre le texte en noir.*/
+  color: #000000;
+  /*Permet souligner le texte.*/
+  text-decoration: underline;
 }
 
-table {
-  border-collapse: collapse;
-  border: 5px solid;
-  border-color: #FAA24C;
+#idk { /*Valable uniquement pour les éléments portant l'identifiant "idk".*/
+  /*Permet de changer l'apparence du curseur*/
+  cursor: wait;
+}
+
+#ok { /*Valable uniquement pour les éléments portant l'identifiant "ok".*/
+  /*Permet de changer l'apparence du curseur*/
+  cursor: help;
+}
+
+#tableau { /*Valable uniquement pour les éléments portant l'identifiant "tableau".*/
+  /*Permet de faire en sorte que la bordure extérieure du tableau et les bordures intérieures soient séparées.*/
+  border-collapse: separate;
+  /*Permet de mettre la couleur de la bordure à une sorte de bleu.*/
+  border-color: #B1B4F7;
+  /*Permet de centrer le tableau.*/
   margin-left: auto;
   margin-right: auto;
-}
-
-tr, td {
-  border-collapse: collapse;
-  border: 5px solid;
-  border-color: #FAA24C;
-}
-
-div {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.0);
 }

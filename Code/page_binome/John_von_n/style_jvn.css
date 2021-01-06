@@ -1,4 +1,4 @@
-/*Import des polices Cabin, Crete Round et Audiowide depuis l'api de google font.*/
+/*Import des polices "Cabin", "Crete Round" et "Audiowide" depuis l'api de google font.*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
@@ -34,7 +34,7 @@ b { /*Valable uniquement pour les textes contenus dans les balises "b".*/
   font-family: 'Crete Round', serif;
 }
 
-img { /*Valable uniquement pour les textes contenus dans les balises "img".*/
+img { /*Valable uniquement pour les contenus dans les balises "img".*/
   /*Permet de placer l'image dans la page.*/
   position: static;
   /*Permet de définir la largeur de l'image.*/
