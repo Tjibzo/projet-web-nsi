@@ -17,7 +17,19 @@ h1 {
   font-family: 'Redressed', cursive;
 }
 
-ol {
+ol, ul{
     text-align: center;
     list-style-position: inside;
 }
+<<<<<<< Updated upstream
+=======
+
+img{
+	margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+	height: 250px;
+	border-radius:20px;
+	border: 7px solid #fff;
+    }
+>>>>>>> Stashed changes
