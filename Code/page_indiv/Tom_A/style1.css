@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+
+
+
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
@@ -9,10 +14,22 @@ h1 {
   font-style: italic;
   color: #FF0000;
   text-decoration : underline;
-  font-family: cursive;
+  font-family: 'Redressed', cursive;
 }
 
-ol {
+ol, ul{
     text-align: center;
     list-style-position: inside;
 }
+<<<<<<< Updated upstream
+=======
+
+img{
+	margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+	height: 250px;
+	border-radius:20px;
+	border: 7px solid #fff;
+    }
+>>>>>>> Stashed changes
