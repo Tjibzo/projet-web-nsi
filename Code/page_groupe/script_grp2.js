@@ -67,7 +67,6 @@ var question_possible = [
   "Savez-vous quel(le) chercheur(se) informatique prône l’utilisation de logiciels libres?",
   "Savez-vous quel(le) chercheur(se) informatique est à l’origine du langage C?",
   "Savez-vous quel(le) chercheur(se) informatique est à l’origine du système d’exploitation UNIX?",
-  "Savez-vous quel(le) chercheur(se) informatique est le fondateur de la théorie de l'information?"
 ];
 
 //Permet de définir une fonction "Ren" prenant en paramètre un maximum.
