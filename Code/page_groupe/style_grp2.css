@@ -107,7 +107,7 @@ a:hover { /*Valable uniquement pour les textes contenus dans les balises "a", qu
   height: 100%;
   /*Permet d'autoriser le scroll si jamais le contenu dépasse de la fenêtre.*/
   overflow: auto;
-  /*Permet de mettre l'intérieur de la fenêtre en blanc.*/
+  /*Permet de mettre l'intérieur de la fenêtre en noir.*/
   background-color: rgb(0,0,0);
   /*Permet de mettre l'arrière-plan de la fenêtre en noir, avec une opacité faible.*/
   background-color: rgba(0,0,0,0.4);
