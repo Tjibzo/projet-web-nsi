@@ -1,0 +1,36 @@
+body {
+    background-color: #8199a3;
+}
+  
+h2 {
+    color: #9b0a1d;
+    font-family: serif;
+    text-align: justify;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    font-family: sans-serif;
+    text-align: justify;
+    list-style: none;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+b{
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #b83006;
+}
+
+img {
+    width: 150px;
+}

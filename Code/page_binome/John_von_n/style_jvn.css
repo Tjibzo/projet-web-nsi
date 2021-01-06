@@ -1,0 +1,142 @@
+/*Import des polices "Cabin", "Crete Round" et "Audiowide" depuis l'api de google font.*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body { /*Valable pour tout le document.*/
+  /*Permet de délimiter là ou les éléments vont apparaître.*/
+  margin-left: 100px;
+  margin-right: 100px;
+  /*Permet de définir la police du texte et de le justifier.*/
+  font-family: 'Cabin', sans-serif;
+  text-align: justify;
+  /*Permet de définir l'espace interligne.*/
+  line-height: 25px;
+}
+
+h1 { /*Valable uniquement pour les textes contenus dans les balises "h1".*/
+  /*Permet de mettre un espace au dessus du texte, en dehors de ses bordures.*/
+  margin-top: 100px;
+  /*Permet de définir la police du texte, le mettre en gras, et de le placer au centre.*/
+  font-family: 'Audiowide', cursive;
+  text-decoration: bold;
+  text-align: center;
+}
+
+h2 { /*Valable uniquement pour les textes contenus dans les balises "h2".*/
+  /*Permet de souligner le texte.*/
+  text-decoration: underline;
+  /*Permet d'espacer les caractères d'une même ligne.*/
+  letter-spacing: 10px;
+}
+
+b { /*Valable uniquement pour les textes contenus dans les balises "b".*/
+  /*Permet de définir la police du texte.*/
+  font-family: 'Crete Round', serif;
+}
+
+img { /*Valable uniquement pour les contenus dans les balises "img".*/
+  /*Permet de placer l'image dans la page.*/
+  position: static;
+  /*Permet de définir la largeur de l'image.*/
+  width: 1000px;
+}
+
+td { /*Valable uniquement pour les textes contenus dans les balises "td".*/
+  /*Permet de mettre une bordure autour du tableau.*/
+  border: 5px solid;
+  /*Permet de mettre la bordure du tetxe en rouge.*/
+  border-color: #ff0000;
+  /*Permet de mettre l'intérieur du tableau en gris clair.*/
+  background-color: #cccccc;
+  /*Permet de "remplir" la case et d'élargir ses bordures.*/
+  padding: 10px;
+}
+
+ul.ecriture { /*Valable uniquement pour les textes contenus dans les balises "ul" portant la classe "ecriture".*/
+  /*Permet de changer le boulet de la liste pour une image.*/
+  list-style-image: url('https://www.flaticon.com/svg/static/icons/svg/1014/1014859.svg');
+}
+
+a { /*Valable uniquement pour les textes contenus dans les balises "a".*/
+  /*Permet d'enlever le soulignement des liens.*/
+  text-decoration: none;
+  /*Permet de mettre les liens en noir.*/
+  color: #000000;
+}
+
+a:hover { /*Valable uniquement pour les textes contenus dans les balises "a", quand ils sont survolés par la souris.*/
+  /*Permet de souligner les liens.*/
+  text-decoration: underline;
+}
+
+a.button { /*Valable uniquement pour les textes contenus dans les balises "a" portant la classe "button".*/
+  /*Permet de "remplir" le texte et d'élargir ses bordures.*/
+  padding: 10px 35px;
+  /*Permet de mettre un espace autour du texte, en dehors de ses bordures, afin de le centrer.*/
+  margin: 0 1rem;
+  margin-left: 16.25%;
+  /*Permet d'enlever le soulignement du texte.*/
+  text-decoration: none;
+  /*Permet de mettre le texte en rouge.*/
+  color: red;
+  /*Permet de mettre l'arrière plan du texte en noir avec une opacité faible.*/
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+a.button:hover {  /*Valable uniquement pour les textes contenus dans les balises "a" portant la classe "button" quand il sosnt survolés par la souris.*/
+  /*Permet de mettre l'arrière plan du texte en rouge.*/
+  background: red;
+  /*Permet de mettre le texte en blanc.*/
+  color: white;
+  /*Permet de faire une transition.*/
+  transition: all 0.05s ease-out 0s;
+}
+
+.accueil { /*Valable uniquement pour les éléments présents dans la division portant la classe "accueil".*/
+  margin-top: -10px;
+  /*Permet de placer, positionner et redimentionner l'image de fond, qui apparaît uniquement dans cette division.*/
+  height: 100%;
+  background-image: url("Assets/neumann.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Permet à l'arrière plan de ne pas être affecté par la zone définie plus haut.*/
+  margin-left: -100px;
+  margin-right: -100px;
+  /*Permet à ce que l'arrière plan reste à la même place quand on scroll dans l'image.*/
+  background-attachment: fixed;
+}
+
+.menu { /*Valable uniquement pour les éléments présents dans la division portant la classe "menu".*/
+  /*Permet ce que le menu prenne toute la largeur de la page.*/
+  width: 100%;
+  /*Permet de mettre la couleur de la barre de menu en gris, avec un peu de transparence.*/
+  background-color: rgba(173, 173, 173, 0.9);
+  /*Permet ce que la barre de menu reste en haut de l'écran quand on scroll.*/
+  position: fixed;
+  /*Permet de placer l'élément au premier plan.*/
+  z-index: 1;
+}
+
+.site { /*Valable uniquement pour les éléments portant la classe "site".*/
+  /*Permet de mettre le texte en bleu.*/
+  color: #0099ff;
+}
+
+.auteurs { /*Valable uniquement pour les éléments portant la classe "auteurs".*/
+  /*Permet de mettre le texte en rouge.*/
+  color: #ff0101;
+}
+
+.livre { /*Valable uniquement pour les éléments portant la classe "livre".*/
+  /*Permet de souligner le texte et de le mettre en italique.*/
+  text-decoration: underline;
+  font-style: italic;
+  /*Permet de mettre le texte en vert.*/
+  color: #339900;
+}
+
+.gd { /*Valable uniquement pour les éléments portant la classe "gd".*/
+  /*Permet de masquer les boulets de la liste.*/
+  list-style-type: none;
+}
